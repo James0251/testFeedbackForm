@@ -1,4 +1,4 @@
-@extends('layout.site')
+@extends('layout.enter')
 
 @section('content')
     <div class="col-md-12" align="center">
