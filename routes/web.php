@@ -13,11 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
-
-//Route::get('/', 'IndexController')->name('index');
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::group([
     'as' => 'user.', // имя маршрута, например user.index

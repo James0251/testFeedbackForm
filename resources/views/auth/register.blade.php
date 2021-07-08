@@ -6,19 +6,19 @@
         @csrf
         <div class="form-group">
             <input type="text" class="form-control" name="name" placeholder="Имя, Фамилия"
-                   required maxlength="255" value="{{ old('name') ?? '' }}">
+                   required maxlength="255" autocomplete="off">
         </div>
         <div class="form-group">
             <input type="email" class="form-control" name="email" placeholder="Адрес почты"
-                   required maxlength="255" value="{{ old('email') ?? '' }}">
+                   required maxlength="255" autocomplete="off">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" name="password" placeholder="Придумайте пароль"
-                   required maxlength="255" value="">
+            <input type="password" class="form-control" name="password" placeholder="Придумайте пароль"
+                   required maxlength="255" autocomplete="off">
         </div>
         <div class="form-group">
-            <input type="text" class="form-control" name="password_confirmation"
-                   placeholder="Пароль еще раз" required maxlength="255" value="">
+            <input type="password" class="form-control" name="password_confirmation"
+                   placeholder="Пароль еще раз" required maxlength="255" autocomplete="off">
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-info text-white">Регистрация</button>
