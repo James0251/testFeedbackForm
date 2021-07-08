@@ -47,3 +47,7 @@ Route::group([
     Route::get('logout', 'Auth\LoginController@logout')
         ->name('logout');
 });
+
+Route::get('/feedback', 'FeedbackController@index')->name('feedback.index');
+Route::get('/create', 'FeedbackController@create')->name('feedback.create');
+Route::post('/feedback', 'FeedbackController@store')->name('feedback.store');

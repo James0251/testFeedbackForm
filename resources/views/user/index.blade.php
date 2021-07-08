@@ -6,6 +6,13 @@
             <h1>Личный кабинет</h1>
             <p>Добрый день {{ auth()->user()->name }}!</p>
             <p>Пожалуйста, заполните форму обратной связи!</p>
+
+            @include('error.response')
+
+            <form method="post" action="{{ route('feedback.store') }}">
+                @csrf
+                @include('feedback.create')
+            </form>
         </div>
     @endif
 @endsection
